@@ -1,0 +1,54 @@
+name: Silvane
+description: "A Server OS."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Sembast Local Database System
+  sembast: ^3.7.1+1
+  path_provider: ^2.1.2
+  path: ^1.8.3
+
+  # Shelf HTTP Local Network Server Ecosystem
+  shelf: ^1.4.1
+  shelf_static: ^1.1.2
+  shelf_router: ^1.1.4
+  shelf_web_socket: ^3.0.0
+  web_socket_channel: ^3.0.2
+
+  # Native Linux Git Shell Execution Layer
+  process_run: ^1.1.2
+
+  # Native Printing, Coversheeting, and Multi-part Uploading
+  printing: ^5.12.0
+  pdf: ^3.10.7 
+  mime: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/ca.pem
+    - assets/cert.pem
+    - assets/key.pem
+    - assets/silvane.jpg
+    - assets/fingerprint2.min.js
+
+dependency_overrides:
+  path_provider: 2.1.2
+  path_provider_linux: 2.2.1
+  #path_provider_android: 2.2.1
+  #jni: ^1.1.0
